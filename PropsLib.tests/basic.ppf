@@ -1,0 +1,12 @@
+﻿const Color blue = 0xff0000ff // blue color with full opacity
+const Color red = 0xaaff0000 // slight transparent red
+const Color green = 0x00cc00 // implicit zero transparence
+
+// main draw method, produces standard image
+draw:
+fill blue
+:draw
+
+// overload draw method, produces alternative images, not available in viewer
+draw(Color x, Color y):
+
