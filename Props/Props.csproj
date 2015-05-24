@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A31D92B9-432B-410C-AE12-81DB9EEE5AFE}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{A15E346C-5A46-4067-B16E-70BBDD9D74E3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PropsLib</RootNamespace>
-    <AssemblyName>PropsLib</AssemblyName>
+    <RootNamespace>Props</RootNamespace>
+    <AssemblyName>Props</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,17 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\ParseErrorException.cs" />
-    <Compile Include="Helpers\ArrayHelper.cs" />
-    <Compile Include="Helpers\StringHelper.cs" />
-    <Compile Include="Interface\IPropsViewer.cs" />
-    <Compile Include="Models\Comment.cs" />
-    <Compile Include="Models\Constants.cs" />
-    <Compile Include="Models\PropsModel.cs" />
-    <Compile Include="Models\Variable.cs" />
-    <Compile Include="Models\VariableContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropsViewer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PropsLib\PropsLib.csproj">
+      <Project>{a31d92b9-432b-410c-ae12-81db9eee5afe}</Project>
+      <Name>PropsLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

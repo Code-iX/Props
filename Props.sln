@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropsLib", "PropsLib\PropsL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropsLib.tests", "PropsLib.tests\PropsLib.tests.csproj", "{D8EC091E-8AD0-4FA7-BD41-9B9A78BC2DC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Props", "Props\Props.csproj", "{A15E346C-5A46-4067-B16E-70BBDD9D74E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D8EC091E-8AD0-4FA7-BD41-9B9A78BC2DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8EC091E-8AD0-4FA7-BD41-9B9A78BC2DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8EC091E-8AD0-4FA7-BD41-9B9A78BC2DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15E346C-5A46-4067-B16E-70BBDD9D74E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15E346C-5A46-4067-B16E-70BBDD9D74E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15E346C-5A46-4067-B16E-70BBDD9D74E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15E346C-5A46-4067-B16E-70BBDD9D74E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
