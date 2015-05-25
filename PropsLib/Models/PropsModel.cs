@@ -6,6 +6,8 @@ namespace PropsLib.Models
 {
     public class PropsModel
     {
+
+
         /// <summary>
         /// Puts a single line into the model
         /// </summary>
@@ -26,10 +28,30 @@ namespace PropsLib.Models
 
             // Extrac
             var comment = GetComment(ref line);
+
+            // TODO look out for parser
             var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (var part in parts)
             {
                 
+                switch (part)
+                {
+                    // allow only function and variable
+                    case "private":
+                        break;
+                    // allow only variable
+                    case "const":
+                        break;
+                    // now set a variable
+                    case "int":
+                    case "float":
+                    case "string":
+                    case "Color":
+                    case "Shape":
+                    case "Pen":
+                        break;
+
+                }
             }
         }
 
